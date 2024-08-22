@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do List</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        padding: 10px;
+        width: 250px;
+      }
+      ul {
+        list-style-type: none;
+        padding: 0;
+      }
+      li {
+        margin: 5px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      input {
+        width: 100%;
+        padding: 5px;
+      }
+      button {
+        width: 20%;
+        padding: 5px;
+        margin-top: 5px;
+      }
+      .delete-btn {
+        background-color: red;
+        width: 20px;
+        color: white;
+        border: none;
+        cursor: pointer;
+        padding: 1px;
+        margin-left: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>To-Do List</h2>
+    <ul id="todo-list"></ul>
+    <input type="text" id="todo-input" placeholder="Add a new task" />
+    <button id="add-btn">Add</button>
+    <script src="popup.js"></script>
+  </body>
+</html>
